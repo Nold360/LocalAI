@@ -333,10 +333,10 @@
       model: Qwen3-VL-32B-Instruct-Q4_K_M.gguf
   files:
     - filename: Qwen3-VL-32B-Instruct-Q4_K_M.gguf
-      sha256: 17885d28e964b22b2faa981a7eaeeeb78da0972ee5f826ad5965f7583a610d9f
+      sha256: 7ea0a652b4bda1c1911a93a79a7cd98b92011dfea078e87328285294b2b4ab44
       uri: huggingface://unsloth/Qwen3-VL-32B-Instruct-GGUF/Qwen3-VL-32B-Instruct-Q4_K_M.gguf
     - filename: mmproj/mmproj-Qwen3-VL-32B-Instruct-F16.gguf
-      sha256: 14b1d68befa75a5e646dd990c5bb429c912b7aa9b49b9ab18231ca5f750421c9
+      sha256: 9f248089357599a08a23af40cb5ce0030de14a2e119b7ef57f66cb339bd20819
       uri: huggingface://unsloth/Qwen3-VL-32B-Instruct-GGUF/mmproj-F16.gguf
 - !!merge <<: *qwen3vl
   name: "qwen3-vl-4b-thinking"
