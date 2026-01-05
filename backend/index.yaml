@@ -521,9 +521,9 @@
     nvidia-cuda-12: "cuda12-onnx-asr"
 - !!merge <<: *onnx-asr
   name: "cuda12-onnx-asr"
-  uri: "reg.dc/local-ai-backends:latest-cuda12-onnx-asr"
+  uri: "oci://reg.dc/local-ai-backends:latest-cuda12-onnx-asr"
   mirrors:
-    - reg.dc/local-ai-backends:latest-cuda12-onnx-asr
+    - docker.io/nold360/local-ai-backends:latest-cuda12-onnx-asr
 - !!merge <<: *neutts
   name: "neutts-development"
   capabilities:
