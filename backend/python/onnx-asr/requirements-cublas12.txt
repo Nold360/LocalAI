@@ -1,0 +1,4 @@
+torch==2.9.1
+onnxruntime-gpu[cuda,cudnn]
+tensorrt-cu12-libs
+onnx-asr

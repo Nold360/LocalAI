@@ -500,6 +500,30 @@
     nvidia-l4t: "nvidia-l4t-neutts"
     nvidia-cuda-12: "cuda12-neutts"
     nvidia-l4t-cuda-12: "nvidia-l4t-arm64-neutts"
+- &onnx-asr
+  name: "onnx-asr"
+  alias: "onnx-asr"
+  license: mit
+  icon: https://user-images.githubusercontent.com/1991296/235238348-05d0f6a4-da44-4900-a1de-d0707e75b763.jpeg
+  description: |
+    ONNX ASR
+  urls:
+    - https://github.com/ggml-org/whisper.cpp
+  tags:
+    - audio-transcription
+    - CPU
+    - GPU
+    - CUDA
+    - HIP
+  capabilities:
+    default: "cuda12-onnx-asr"
+    nvidia: "cuda12-onnx-asr"
+    nvidia-cuda-12: "cuda12-onnx-asr"
+- !!merge <<: *onnx-asr
+  name: "cuda12-onnx-asr"
+  uri: "reg.dc/local-ai-backends:latest-cuda12-onnx-asr"
+  mirrors:
+    - reg.dc/local-ai-backends:latest-cuda12-onnx-asr
 - !!merge <<: *neutts
   name: "neutts-development"
   capabilities:
